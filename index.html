@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eid Greeting Card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			.container {
+				height: 100vh;
+				background-color: lemonchiffon;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+                gap: 50px;
+				align-items: center;
+			}
+			.grid-container {
+				transform: rotate(45deg);
+				display: grid;
+				grid-template-columns: auto auto auto;
+				column-gap: 10px;
+				row-gap: 10px;
+			}
+			.grid-item {
+				height: 80px;
+				width: 80px;
+			}
+			.grid-item:nth-child(odd) {
+				background-color: green;
+			}
+			.grid-item:nth-child(even) {
+				background-color: limegreen;
+			}
+			.greeting {
+				text-align: center;
+				font-family: "Satisfy", cursive;
+				font-weight: 700;
+				font-size: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="grid-container">
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+			</div>
+			<div class="greeting">
+				<p>.: Selamat Hari Raya Idul Fitri :.</p>
+				<p>Mohon Maaf Lahir dan Batin &heartsuit;</p>
+			</div>
+		</div>
+	</body>
+</html>
